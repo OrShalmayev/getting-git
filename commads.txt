@@ -32,4 +32,10 @@ git add -u = skip untracked files and only add trakced files
 git add -p = will gather all changes in track files  and allow you to review them interactivly
 
 #How to write to a file 
-vi {filename.extenstion}
+vi {filename.extenstion} 
+:wq = to quit
+
+# ===== Part 1 - Master git commit ======
+git commit -a -m {you message} = will add and commit in one step
+git commit --amend =  modify the precious commit message
+git commit -a --amend --no-edit =  to add addiotional changes to the previous commit
