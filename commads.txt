@@ -38,4 +38,12 @@ vi {filename.extenstion}
 # ===== Part 1 - Master git commit ======
 git commit -a -m {you message} = will add and commit in one step
 git commit --amend =  modify the precious commit message
-git commit -a --amend --no-edit =  to add addiotional changes to the previous commit
+git commit -a --amend --no-edit =  to add addiotional changes to the previous commit. the "-a" addes all changes to all tracked files. the "--amend" will join them to the precious commit. and the "--no-edit"  tells git we do not want to edit the previous commit message
+
+# ===== Part 1 - removing files from a git repository ======
+rm {filename} = will remove the file then you can add this change with git add {filename}
+# to do this in one step just do like this:
+git rm {filename}
+
+# ===== Part 1 - git reset ======
+git reset {filename} = undo add command
