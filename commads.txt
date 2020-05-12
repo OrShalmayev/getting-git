@@ -1,0 +1,18 @@
+# Set the user name
+git config --global user.name "Or Shalmayev"
+
+# Set the user email
+git config --global user.email "shalmayev1993@gmail.com"
+
+# change editor 
+git config --global core.editor ""
+
+# Verify config changes 
+git config --list
+
+# ===== Part 1 - Making Changes ======
+git init  = making a git repository by runining "git init" we can turn a directory into a git repository this allows us to use git to track changes on any of the files under the directory
+git status = verify's that our git repository was created
+ls -la .git = list the contents of a directory 
+rm -rf .git = remove a git directory by doing so we destory the git repository
+#Note: if ever run git init in the wrong place: simply remove the .git directory 
