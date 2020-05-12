@@ -16,3 +16,20 @@ git status = verify's that our git repository was created
 ls -la .git = list the contents of a directory 
 rm -rf .git = remove a git directory by doing so we destory the git repository
 #Note: if ever run git init in the wrong place: simply remove the .git directory 
+touch {filename} to create a file
+ls = confirm files created: 
+git add {filename}  = will add the file to tracked files
+git add . = will add all the untracked files
+# ===== Part 1 - Master git add ======
+git add . = has 2 Nuances:
+first: it only addes files under the current directory so if you run "git add ." in sub directory it wont add changes to files outside it's subdirectory 
+second: "git add ." holds tracked and untracked files 
+you can avoid that by using git add -A this will add all changes to all files within the git repository regardless of our current directory
+
+git add -u = skip untracked files and only add trakced files 
+
+# the option i use most is: "git add -p" the -p stands for patch 
+git add -p = will gather all changes in track files  and allow you to review them interactivly
+
+#How to write to a file 
+vi {filename.extenstion}
